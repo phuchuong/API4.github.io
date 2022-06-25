@@ -1,0 +1,406 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* header */
+.header{
+    background-color: #1ca9e0;
+}
+.header-logo{
+    width: 33.3333%;
+  
+
+}
+.header-logo .anh-bia{
+    width: 80%;
+    height: 100px;
+    animation: example 5s infinite ease-in-out;
+    cursor: pointer;
+    padding: 15px;
+}
+@keyframes example {
+    35%,
+    100%{
+        transform: scale(1);
+    }
+    10% {
+        transform: rotateX(360deg) scale(1.05);
+    }
+}
+
+.header-login h1{
+    color: #fff;
+    font-weight: 200;
+
+} 
+.heder-login{
+    float: right;
+    text-align: center;
+    padding-top: 30px;
+
+    color: #fff;
+}
+.header-help{
+    float: right;
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+    padding-left: 200px;
+    font-weight: 100;
+}
+
+/*css phần nav*/
+
+.nav {
+    background-color: #8AAAE5;
+    height: 40px;
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    line-height: 40px;
+    margin-right: 5px;
+}
+
+.nav li a {
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    font-weight: 600;
+}
+
+.fa-home {
+    height: 20px;
+    width: 26px;
+}
+
+.fa-chevron-right {
+    margin-bottom: -4px;
+    width: 12px;
+    color: white;
+    height: 20px;
+}
+
+/* setioc - left */
+
+
+
+/* section star*/
+
+.nav-input:checked ~ .a{
+    display: block;
+}
+
+
+
+
+
+.section{
+    width: 100% ;
+    height: 100%;
+    margin-bottom: 13%;
+
+}
+
+/* section js */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 25%;
+    height: 300px;
+  }
+  .tab .tablinks a {
+      color: black;
+      
+      text-decoration:none ;
+
+  }
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    /* border: 1px solid #ccc; */
+    width: 75%;
+    border-left: none;
+    height: 300px;
+    display: none;  
+    /* width: 100%;*/
+    height: 100%;
+    /* border: 1px solid rgb(255, 255, 255);     */
+    position: relative;
+    /* margin-bottom:80px; */
+  }
+.ti-home,.ti-mobile
+,.ti-shopping-cart,.ti-shopping-cart-full
+,.ti-truck ,.ti-id-badge,.ti-align-justify
+,.ti-money {
+    margin: 0 10px;
+ 
+}
+
+
+/* .section-left{
+    background-color: rgb(255, 255, 255);;
+}
+
+.section-menu-quantri ,.ti-home,.ti-mobile
+,.ti-shopping-cart,.ti-shopping-cart-full
+,.ti-truck ,.ti-id-badge,.ti-align-justify
+,.ti-money {
+
+
+}
+.section-menu-quantri li{
+    
+    border:1px solid #ffffff ;
+
+    height: 50px;
+    padding-left: 20px;
+}
+.section-menu-quantri li:hover{
+    background-color:#CEFFC7;
+}
+.section-menu-quantri li a{
+    text-decoration: none;
+    
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    padding: 0 15px;
+
+}
+.section-menu-quantri li a:hover{
+
+}
+
+.section-menu-quantri .a:hover .section-right-list-1 {
+    display: block;
+} */
+
+
+.section-right{
+    width: 100%;
+
+}
+
+
+
+/*  quan lý điện thoại*/
+
+.add-product-type{
+    /* border: 3px solid #F2F4F8; */
+    display: flex;
+    height: 50px;
+}   
+.add-product-type h3{
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin: 10px 20px;
+}
+.add-product-type .button-add-type{
+    
+    height: 35px;
+    text-align: center;
+    margin: 3px  100px ;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+
+
+.table-product-type{
+    border: 3px solid #F2F4F8;
+    width: 100%;
+    text-align: center;
+ 
+}
+.table-product-type th{
+    border: 1px solid #F2F4F8;
+    width: 140px;
+    height: 50px;
+    background-color: #CEFFC7;
+    font-size: 17px;
+    font-weight: 300px;
+}
+.table-product-type td {
+    border: 1px solid #F2F4F8;
+    width: 140px;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 300px;
+}
+.table-product-type .phone_img{
+    width: 70px;
+    height: 70px;
+}
+.table-product-type .btn_remove{
+    border: 1px solid  #F2F4F8;
+    color: red;
+    width: 20px;
+    height: 20px;
+}
+.table-product-type .btn_edit{
+    border: 1px solid  #F2F4F8;
+    width: 20px;
+    height: 20px;
+    color: #0097ff;
+}
+
+
+
+
+/* list 2 */
+
+
+
+
+
+
+
+/* section end */       
+
+
+
+/* footer */
+.footer-for i[class*="ti-"]{
+    color: #fff;
+}
+.footer-border span{
+    font-size: 16px;
+
+}
+/* footer-chung end*/
+
+.footer{
+   
+    height: auto;
+    background-color:  #00D2A8;
+    border-top: 10px solid #CEFFC7;
+    color: #fff;
+
+    
+}
+.footer-border{
+
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black;
+    padding-top: 50px; */
+    /* background-color: chartreuse; */
+}
+.footer-for{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: center;
+}
+.footer-for li{
+    list-style-type: none;
+}
+.footer-for a{
+    text-decoration: none;
+}
+.footer-hlep{
+    padding: 0 20px;
+}
+.footer-hlep li a{
+    color: #fff;
+}
+.footer-hlep ul  {
+    padding: 5px 0;
+}
+.footer-hlep li{
+    padding: 2px 0;
+}
+
+.footer-information{
+    padding: 0 20px;
+}
+.footer-information li{
+    padding: 3px 0;
+}
+.footer-pay {
+    padding: 0 20px;
+}
+.footer-pay img{
+    width: auto;
+    height: 106px;
+    margin-top: 25px;
+}
+.footer-email{
+    padding: 0px 20px;
+}
+.footer-email p {
+    padding-top: 5px;
+}
+.footer-resgister{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.footer-resgister .email{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 20px;
+    padding-left: 20px;
+    outline: none;
+
+}
+/* .footer-resgister .email:focus {
+    border: none;
+
+} */
+.footer-resgister .dangki{
+    width: 40%;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    background-color:crimson;
+}
+.footer-resgister .dangki:hover{
+    background-color: #fff;
+    color: black;
+    border: none;
+}

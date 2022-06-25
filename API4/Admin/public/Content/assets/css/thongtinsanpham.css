@@ -1,0 +1,81 @@
+
+
+/* section star */
+
+.section {
+    background-color: #FFFFFF;
+}
+
+.section-iphone {
+    height: 100%;
+    margin-left: 150px;
+}
+
+.section-head-left{
+ margin: 50px;
+ width: 400px;
+ height: 500px;
+ /* border: 2px solid #43c637; */
+}
+.section-head-left img{
+   width: 400px;
+   height: 450px;
+   }
+   
+
+.section-iphone-label {
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 15px 0px;
+
+    text-align: center;
+}
+
+.section-head {
+    border-top: 1px solid #EEEEEE;
+  
+}
+
+
+
+.head-right-review {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.prop-p {
+    padding: 6px 0px;
+    border-top: 1px solid #EEEEEE;
+    height: 32px;
+}
+
+.prop-label {
+    width: 50%;
+    float: left;
+}
+
+.prop-span {
+    width: 50%;
+    float: right;
+}
+
+.btn-cart {
+    border: none;
+    width: 100%;
+    height: 68px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.btn-cart:hover {
+    background-color: #FE5F00;
+}
+
+
+
+
+

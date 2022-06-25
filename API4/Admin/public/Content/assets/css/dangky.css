@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* header */
+.header{
+    background-color: #1ca9e0;
+}
+.header-logo{
+    width: 33.3333%;
+  
+
+}
+.header-logo .anh-bia{
+    width: 80%;
+    height: 100px;
+    animation: example 5s infinite ease-in-out;
+    cursor: pointer;
+    padding: 15px;
+}
+@keyframes example {
+    35%,
+    100%{
+        transform: scale(1);
+    }
+    10% {
+        transform: rotateX(360deg) scale(1.05);
+    }
+}
+
+.header-login h1{
+    color: #fff;
+    font-weight: 200;
+
+} 
+.heder-login{
+    float: right;
+    text-align: center;
+    padding-top: 30px;
+
+    color: #fff;
+}
+.header-help{
+    float: right;
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+    padding-left: 200px;
+    font-weight: 100;
+}
+/* heder- and */
+
+/* section star*/
+
+/*css phần nav*/
+
+.nav {
+    background-color: #8AAAE5;
+    height: 40px;
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    line-height: 40px;
+    margin-right: 5px;
+}
+
+.nav li a {
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    font-weight: 600;
+}
+
+.fa-home {
+    height: 20px;
+    width: 26px;
+}
+
+.fa-chevron-right {
+    margin-bottom: -4px;
+    width: 12px;
+    color: white;
+    height: 20px;
+}
+
+
+/*css phần main*/
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.main-width {
+    /* width: 90%; */
+    background-color: #FFFFFF;
+    /* margin: 0 auto; */
+    margin-top: 32px;
+    height: 100%;
+    display: flex;
+    color: #939393;
+}
+.row-list{
+    margin: 40px auto;
+    padding: 10px;
+}
+.main-width-left {
+    height: 100%;
+}
+
+.nameuser-inputs {
+    outline: none;
+    width: 100%;
+    height: 36px;
+}
+
+
+/*section*/
+
+.section {
+    height: 800px;
+    position:relative;
+    
+   
+ 
+}
+
+.section_boder {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #EFF0F5;
+
+}
+
+/* .main_background img {
+    height: 100%;
+    width: 100%;
+} */
+.section_main{
+    margin: 0 auto;
+    height: 80%;
+    margin-top: 4%;
+    padding: 10px;
+}
+.section_login {
+   
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 0 500px;
+}
+
+.section_login_label {
+    height: 40px;
+    width: 95%;
+    margin: 24px auto;
+    display: flex;
+}
+
+.section_login_label_log {
+    line-height: 40px;
+    width: 90%;
+    color: #1ca9e0;
+}
+
+
+
+.section_login_email {
+    width: 95%;
+    margin: 12px auto;
+}
+
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button  {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+
+}
+.cancelbtn a{
+    color: #fff;
+    text-decoration: none;
+}
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+
+
+/* section end */
+
+
+
+/* footer */
+.footer-for i[class*="ti-"]{
+    color: #fff;
+}
+.footer-border span{
+    font-size: 16px;
+
+}
+/* footer-chung end*/
+
+.footer{
+    margin-top: 30px;
+    height: auto;
+    background-color:  #00D2A8;
+    border-top: 10px solid #CEFFC7;
+    color: #fff;
+
+    
+}
+.footer-border{
+
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black;
+    padding-top: 50px; */
+    /* background-color: chartreuse; */
+}
+.footer-for{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: center;
+}
+.footer-for li{
+    list-style-type: none;
+}
+.footer-for a{
+    text-decoration: none;
+}
+.footer-hlep{
+    padding: 0 20px;
+}
+.footer-hlep li a{
+    color: #fff;
+}
+.footer-hlep ul  {
+    padding: 5px 0;
+}
+.footer-hlep li{
+    padding: 2px 0;
+}
+
+.footer-information{
+    padding: 0 20px;
+}
+.footer-information li{
+    padding: 3px 0;
+}
+.footer-pay {
+    padding: 0 20px;
+}
+.footer-pay img{
+    width: auto;
+    height: 106px;
+    margin-top: 25px;
+}
+.footer-email{
+    padding: 0px 20px;
+}
+.footer-email p {
+    padding-top: 5px;
+}
+.footer-resgister{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.footer-resgister .email{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 20px;
+    padding-left: 20px;
+    outline: none;
+
+}
+/* .footer-resgister .email:focus {
+    border: none;
+
+} */
+.footer-resgister .dangki{
+    width: 40%;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    background-color:crimson;
+}
+.footer-resgister .dangki:hover{
+    background-color: #fff;
+    color: black;
+    border: none;
+}

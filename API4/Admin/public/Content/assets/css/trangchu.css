@@ -1,0 +1,827 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+.row {
+    flex-wrap: wrap;
+    display: flex;
+
+}
+
+
+.no-gutters{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* dùng chung end */
+
+
+#header-trangchu{
+   
+    width: 100%;
+
+}
+
+#header-trangchu nav{
+    align-items: center;
+}
+
+#header-trangchu .header-bia{
+    background-color: rgb(255, 255, 255);
+    
+
+}
+
+.header-logo{
+    width: 33.3333%;
+    
+}
+.header-logo .anh-bia{
+    width: 300px;
+    height: 90px;
+    animation: example 5s infinite ease-in-out;
+    cursor: pointer;
+    /* padding: 15px; */
+    padding-left: 90px;
+    
+
+    
+}
+
+@keyframes example {
+    35%,
+    100%{
+        transform: scale(1);
+    }
+    10% {
+        transform: rotateX(360deg) scale(1.05);
+    }
+}
+
+
+.header-search{
+    position: relative;
+    text-align: center;
+}
+.header-search .header-search-input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width:400px;
+    height: 25px;
+    padding: 5px 40px 5px 4px;   
+
+}
+
+.header-search a{
+    text-decoration: none;
+    background-color:#FB6445;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 0px;
+    width: 35px;
+    height: 26px;
+    padding: 4px 0;
+    font-size: 20px;
+    border-radius: 4px;
+
+}
+/* nút search */
+.header-search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+
+    background: #f1f1f1;
+  }
+
+.header-search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* login star */
+.header-menuitem{
+    display: flex;
+    padding-left: 25px;
+   
+}
+.header-menuitem-list {
+
+    padding-left:140px;
+    
+}
+
+.header-menuitem-list li{
+    float: left;
+    padding: 5px 20px;
+    list-style: none;
+
+    
+}
+
+.header-menuitem  .header-menuitem-login {
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 30px;
+    padding-top: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 5px;
+    
+}
+.header-menuitem  .ti-shopping-cart:hover,.header-menuitem-login:hover{
+   background-color: #04AA6D;
+   border: 1px solid #04AA6D;
+}
+
+.header-menuitem  .header-menuitem-login a{
+  color: rgb(7, 5, 5);
+  text-decoration: none;
+
+}
+.ti-shopping-cart{
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 30px;
+    margin-right: 100px;
+
+    background-color: rgb(255, 255, 255);
+}
+.ti-shopping-cart a {
+    text-decoration: none;
+    color: black;
+}
+a{
+    text-decoration: none;
+    
+}
+
+/* login end */
+/* menu tìm kiếm */
+
+/* #header-trangchu .menu-trangchu-2{
+   
+    border: 1px solid azure;
+    background-color:azure ;
+    border-radius: 5px;
+    position: absolute;
+    width :400px;
+    height: 40px;
+    top: 65px;
+    left: 506px;
+    display: none;
+}
+#header-trangchu .menu-trangchu-2 ul{
+    list-style-type: none;
+    margin: 10px 5px;
+
+}
+#header-trangchu .menu-trangchu-2 li a{
+    text-decoration: none;
+    color:black;
+    font-size: 17px;
+    font-weight:100 ;
+    display: none;
+}
+ */
+
+
+
+
+
+
+/* menu star */
+
+#header-trangchu .menu-trangchu{
+    width: 100%;
+    
+}
+
+
+/* css js */
+.sticky {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+/*  */
+
+.menu-trangchu #mymenu{
+    z-index: 2;
+
+}
+#header-trangchu .menu-trangchu ul{
+    background-color: #D9EEE1;
+
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    width: auto;
+    height: 35px;
+
+}
+#header-trangchu .menu-trangchu  li {
+    /* width: auto;
+    height: 35px; */
+    background-color: #D9EEE1;
+    /* border: 2px solid #D9EEE1; */
+    border-radius:25px ;
+    padding: 7px 30px;
+    text-align:center;
+
+}
+#header-trangchu .menu-trangchu a{
+    text-decoration: none;
+    color: azure;
+
+}
+/* #header-trangchu .menu-trangchu a:hover{
+    text-decoration: none;
+    color: azure;
+
+} */
+
+
+
+#header-trangchu .menu-trangchu  li:hover {
+    
+    border: 2px solid #04AA6D;
+    background-color: #04AA6D;
+    color: #fff;
+    border-radius:25px ;
+
+}
+
+/*menu end  */
+
+
+
+
+
+
+
+
+
+/*star  */
+
+
+.section-1{
+
+    width: 100%;
+}
+.section-1 .slide-show .slide-show-me img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+.button{
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    opacity: 40%;
+    border-radius:5px ;
+    
+    
+}
+.black{
+    color: rgb(0, 0, 0)!important;
+    background-color: rgb(255, 255, 255)!important;
+    
+}
+.display-left{
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    transform: translate(0%,-50%);
+
+}
+.display-right{
+    position: absolute;
+    top: 40%;
+    right: 1%;
+    transform: translate(0%,-50%);
+}
+/* .section_1 p span{
+   
+} */
+
+/* content star */
+.content{
+    width: 66%;
+    margin: 0 auto;
+    
+}
+
+
+.section a{
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 22px;
+    
+}
+
+
+.box-head{
+    position: relative;
+    height: auto;
+    background: #fff;
+    margin-top: 20px;
+    padding: 20px 0px 5px 0 ;
+  
+  
+}
+
+.box-tittle{
+    color: aqua;
+    font-size: 20px;
+ 
+}
+.menu-iphone{
+    padding: 5px 0;
+}
+.menu-iphone a{
+    color: black;
+    font-size: 16px;
+}
+.more{
+    position: absolute;
+    right: 0;
+    color: #329aab;
+    font-size: 16px;
+    font-weight: 100;
+}
+.row-item{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* list apple */
+
+.row-item{
+    width: 100%;
+    height: 100%;
+    
+}
+.list-apple-1{
+    position: relative;
+    height: 100%;
+    width: 200px;
+    border: 1px solid #eee;
+    float: left;
+    text-align: center;
+}
+.list-apple-image-1{
+    width: 100%;
+    height: 205px;
+    position: relative;
+
+  
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    font-size: 12px;
+}
+.overlay li{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 10px ;
+    margin-right: 6px;
+    display: list-item;
+    text-align:left;
+    list-style: none;
+}
+.list-apple-image-1 .iphone7plus{
+    margin-left: 10px;
+    width: 180px;
+    height: 190px;
+}
+.list-apple-image-1:hover .iphone7plus{
+
+    transition: 1.1s;
+    transform: scale(1.1);
+}
+.list-apple-image-1:hover .overlay{
+    opacity: 1;
+}
+
+
+
+.product-name{
+    position: relative;
+
+}
+.product-price .price ,sup{
+    color: crimson;
+}
+.product-name .add-cart{
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aliceblue;
+
+   
+}
+.product-name .add-cart:hover{
+   
+    opacity: 1;
+}
+.product-name  a{
+    width: 100%;
+    height: 62%;
+    color: #000;
+    padding: 5px 0;
+    border: 1px solid aliceblue;
+}
+
+/* content1 end */
+
+/* footer- chân trang-  star */
+
+/* footer-chung */
+
+.footer-for i[class*="ti-"]{
+    color: #fff;
+}
+.footer-border span{
+    font-size: 16px;
+
+}
+/* footer-chung end*/
+
+.footer{
+    margin-top: 30px;
+    height: auto;
+    background-color:  #D9EEE1;
+    border-top: 10px solid  #D9EEE1;
+    color: rgb(0, 0, 0);
+    padding-left: 170px;
+}
+.footer-border{
+
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black;
+    padding-top: 50px; */
+    /* background-color: chartreuse; */
+}
+.footer-for{
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: center;
+}
+.footer-for li{
+    list-style-type: none;
+}
+.footer-for a{
+    text-decoration: none;
+    
+}
+.footer-hlep{
+    padding: 0 30px;
+ 
+}
+.footer-hlep li a{
+    color: rgb(4, 3, 3);
+    text-decoration: none;
+}
+
+
+.footer-hlep ul  {
+    padding: 5px 0;
+}
+.footer-hlep li{
+    padding: 2px 0;
+}
+
+.footer-information{
+    padding: 0 30px;
+}
+.footer-information li{
+    padding: 3px 0;
+}
+.footer-pay {
+    padding: 0 30px;
+}
+.footer-pay img{
+    width: auto;
+    height: 106px;
+    margin-top: 25px;
+}
+.footer-email{
+    padding: 0px 30px;
+}
+.footer-email p {
+    padding-top: 5px;
+}
+.footer-resgister{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.footer-resgister .email{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 20px;
+    padding-left: 20px;
+    outline: none;
+
+}
+/* .footer-resgister .email:focus {
+    border: none;
+
+} */
+.footer-resgister .dangki{
+    width: 40%;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+    background-color:#04AA6D;
+}
+.footer-resgister .dangki:hover{
+    background-color: #fff;
+    color: black;
+    border: none;
+}
+/* footer- chân trang-  end */
+
+
+
+
+
+
+
+
+/* meniu - iphone */
+.ti-menu{
+    
+    
+    position: absolute;
+    left: 5px;
+    top: 158px;
+    color: rgb(255, 255, 255);
+    display: none;
+    font-size: 25px;
+    font-weight:900;
+}
+.ti-close{
+   
+    position: absolute;
+    top: 0.4rem;
+    right: 0.5rem;
+    color: #666;
+    font-size: 20px;
+    font-weight:900;
+ 
+ }
+
+ 
+.nav-overplay{
+    z-index: 3;
+    position: fixed ;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,0.3);
+    display: none;
+}
+
+
+/* menu -iphone */
+.menu-trangchu-iphone{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+
+    max-width: 100%;
+    background-color: #fff;
+    /* display: none; */
+    transform: translateX(-100%);
+    /* transition: transfrom linear 1s; */
+}
+.menu-trangchu-iphone ul{
+    margin-top: 40px;
+    
+    text-align: center;
+    
+}
+
+.menu-trangchu-iphone li a{
+    text-decoration: none;
+    display: block;
+    padding: 8px 0;
+    font-size: 22px;
+    color:black;
+    font-weight:14em;
+    border: 1px solid #ffffff;
+    height: 40px;
+    list-style-type: none;
+   
+    
+   
+}
+.menu-trangchu-iphone li a:hover{
+    background-color: #1ca9e0;
+}
+
+
+
+
+.nav-input:checked ~.nav-overplay{
+    display: block;
+}
+.nav-input:checked ~.menu-trangchu-iphone{
+    transform: translateX(0%);
+    display: block;
+}
+
+
+@media only screen and (max-width:46.1875em) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+@media only screen and (min-width:46.1875em) and (max-width:63.9375em) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+  }
+
+
+
+
+
+
+/* 0-740px */
+@media only screen and (max-width:46.1875em) {
+    .row-item{
+        margin: 0 20px;
+        justify-content: center;
+    }
+    .menu-trangchu ul li a{
+        display: none;
+      
+        
+    }
+    .sticky{
+        display: none;
+    }
+    .ti-menu{
+
+        display: block;
+    }
+
+    .header-logo{
+        max-width:100px;
+    }
+    .header-search{
+        position: relative;
+
+    }
+    .header-search .header-search-input{
+        width: 260px;
+    }
+    .header-menuitem{
+        padding-bottom: 20px;
+
+    }
+
+    .display-left{
+        top:32%;
+    }
+    .display-right{
+        top:32%;
+    
+    }
+
+    .more {
+        right:10px;
+    }
+
+    .ti-shopping-cart{
+        margin-right: 5px;
+        
+    }
+    .footer-email {
+        width: 240px;
+
+    }
+    .menu-iphone{
+        display: none;
+    }
+
+    .content{
+        width: 100%;
+       
+    }
+    .footer {
+        height: 650px;
+    }
+
+  
+
+}   
+
+/* 740px-1024px */
+@media only screen and (min-width:46.1875em) and (max-width:64em){
+    
+    .header-search .header-search-input{
+        width: 300px;
+    }
+    .ti-shopping-cart{
+        margin-right: 5px;
+
+    }
+    .header-menuitem{
+        margin-left: 10px;
+    }
+    .header-logo{
+        max-width: 300px;
+    }
+    .display-left{
+        top:18%;
+    }
+    .display-right{
+        top:18%;
+    
+    }
+    .content{
+        width: 100%;
+        margin-left:5px ;
+    }
+    .more {
+        right:10px;
+    }
+    .footer-email {
+        width: 210px;
+
+    }
+}

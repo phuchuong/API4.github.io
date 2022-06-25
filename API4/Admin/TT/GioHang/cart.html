@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/Content/assets/css/trangchu.css">
+    <link rel="stylesheet" href="/public/Content/assets/css/thongtinsanpham.css">
+    <link rel="stylesheet" href="/public/Content/assets/font/themify-icons-font/themify-icons/themify-icons.css">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+    <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/public/chitietcss/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/public/chitietcss/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/public/chitietcss/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/public/chitietcss/fonts/linearicons-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/public/chitietcss/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/public/chitietcss/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/public/chitietcss/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/public/chitietcss/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/public/chitietcss/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/public/chitietcss/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/public/chitietcss/css/main.css">
+
+    <style>
+        ol,
+        ul {
+            margin-bottom: 0px;
+        }
+
+        .name-height {
+            height: 37px;
+        }
+
+        #searchString {
+            width: 400px;
+            border-radius: 5px;
+            height: 30px;
+        }
+
+        #searchsubmit {
+            height: 34px;
+            width: 34px;
+            border: 1px solid #FB6445;
+            margin-right: 25px;
+            border-radius: 5px;
+            background-color: #FB6445;
+            color: white;
+        }
+
+        ol,
+        ul,
+        dl {
+            margin-top: 0;
+            margin-bottom: 0rem !important;
+        }
+    </style>
+</head>
+
+<body lang="en" ng-app="myapp" ng-controller="giohangcontroller">
+
+    <header id="header-trangchu">
+        <div class="header-bia">
+            <nav class="row no-gutters">
+                <div class="header-logo">
+                    <img src="/public/Content/assets/image/n.png" alt="ảnh bìa " class="anh-bia">
+                </div>
+
+                <div class="header-search">
+
+
+                    <input class="form-control" type="text" placeholder="Tìm Kiếm" aria-label="Search for..."
+                        aria-describedby="btnNavbarSearch" ng-init="textSearch=''" ng-model="textSearch"
+                        style="width:350px" />
+                    <button class="fa fa-search" type="submit" id="searchsubmit"></button>
+
+                </div>
+
+
+
+
+                <div class="header-menuitem">
+                    <div class="header-menuitem-list">
+                        <ul>
+                            <li class="ti-shopping-cart"><a href="/TT/GioHang/cart.html" style="text-decoration: none;">Giỏ
+                                    hàng</a></li>
+                            <li class="header-menuitem-login"><a href="/admin/login">Đăng nhập</a></li>
+                            <!-- <div class="navbar__link-separator"> </div> -->
+                            <li class="header-menuitem-login"><a>Đăng ký</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+        <div id="mymenu" class="menu-trangchu">
+            <ul>
+                <li><a href="/TT/trangchu.html" style="color:black"> Trang chủ </a> </li>
+                <li><a href="/TT/TrangCon/iphone.html?idloaisp=1" style="color:black">Iphone</a></li>
+                <li><a href="/TT/TrangCon/iphone.html?idloaisp=2" style="color:black">Samsung</a></li>
+                <li><a href="/TT/TrangCon/iphone.html?idloaisp=3" style="color:black">Nokia</a></li>
+                <li><a href="/TT/TrangCon/iphone.html?idloaisp=4" style="color:black">Xiaomi</a></li>
+                <li><a href="/TT/TrangCon/iphone.html?idloaisp=5" style="color:black">OppO</a></li>
+                <li><a href="/TT/TrangCon/iphone.html?idloaisp=6" style="color:black">Vsmart</a></li>
+                <!-- <li><a class="a" href="#">Realme</a></li> -->
+                <!-- <i class="fa fa-bars"></i> -->
+
+            </ul>
+
+
+        </div>
+        <!-- thanh menu chính -->
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var navbar = document.getElementById("mymenu");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <!-- pc -->
+
+
+
+        <label for="nav-mobi-input" class="ti-menu">
+        </label>
+
+        <input type="checkbox" hidden class="nav-input" name="" id="nav-mobi-input">
+        <label for="nav-mobi-input" class="nav-overplay">
+        </label>
+
+        <label for="nav-mobi-input" class="menu-trangchu-iphone">
+
+
+            <label for="nav-mobi-input" class="ti-close"></label>
+        </label>
+    </header>
+
+
+    <section class=" section-1">
+
+        <div class="slide-show">
+            <div class="slide-show-me"><a href=""><img src="/public/Content/assets/slideimg/slide_01.jpg"
+                        alt="slide-1"></a></div>
+            <div class="slide-show-me"><a href=""><img src="/public/Content/assets/slideimg/slide_02.jpg"
+                        alt="slide-1"></a></div>
+            <div class="slide-show-me"><a href=""><img src="/public/Content/assets/slideimg/slide_03.jpg"
+                        alt="slide-1"></a></div>
+            <div class="slide-show-me"><a href=""><img src="/public/Content/assets/slideimg/slide_04.jpg"
+                        alt="slide-1"></a></div>
+            <div class="slide-show-me"><a href=""><img src="/public/Content/assets/slideimg/slide_06.jpg"
+                        alt="slide-1"></a></div>
+            <button class="button black display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button black display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slide-show-me");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+
+
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("slide-show-me");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+
+    </section>
+    <!-- giua -->
+    <div>
+        <div>
+
+            <section class="section"  >
+                <div class="section-iphone grid wide" >
+                    <!-- breadcrumb -->
+                    <div class="container">
+                        <div class="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
+                            <a href="" class="stext-109 cl8 hov-cl1 trans-04">
+                                Home
+                                <i class="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true"></i>
+                            </a>
+                            
+                            <span class="stext-109 cl4">
+                                Shoping Cart
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Shoping Cart -->
+                    <form class="bg0 p-t-75 p-b-85">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 col-xl-7 m-lr-auto m-b-50">
+                                    <div class="m-l-25 m-r--38 m-lr-0-xl">
+                                        <div class="wrap-table-shopping-cart">
+                                            <table class="table-shopping-cart">
+                                                <tr class=" table  table-hover table-bordered table-striped">
+                                                    <th class="column-1">Ảnh</th>
+                                                    <th class="column-2">Tên SP</th>
+                                             
+                                                    <th class="column-4">Đơn giá</th>
+                                                    <th class="column-5">Số lượng</th>
+                                                    <th class="column-6">Thành tiền</th>
+                                                    <th class="column-7">Xoá</th>
+                                                </tr>
+        
+                                                <tr class=" table  table-hover table-bordered table-striped" ng-repeat="sp in listcartp">
+        
+                                                    <td class="column-1">
+                                                            <img src="/public/Content/assets/image/products/{{sp.hinhAnh2}}" width="100" height="90" alt="" srcset="">
+                                                    </td>
+                                                    <td class="column-2">{{sp.tenSP}}</td>
+
+                                                    <td class="column-4">{{sp.giaBan | number:0}}.VNĐ</td>
+                                                    <td class="column-5">
+                                                        <div class="wrap-num-product flex-w m-l-auto m-r-0">
+                                                            <button class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m fs-16 zmdi zmdi-minus" ng-click="giam(sp.id_SP)"></button>
+        
+                                                         
+                                                           
+                                                            <a class="btn-num-product-up cl3 hov-btn3 num-product trans-04 flex-c-m" type="number" name="num-product1" > {{sp.quantity }}</a>
+        
+                                                            <button class="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m fs-16 zmdi zmdi-plus" ng-click="tang(sp.id_SP)"></button>
+                                                        </div>
+                                                    </td>
+                                                    <td class="column-6">{{sp.giaBan*sp.quantity| number:0}}.VNĐ</td>
+                                                    <td class="column-7 btn btn-danger" ng-click="xoa(sp.id_SP)">Delete</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+        
+                                        <div class="flex-w flex-sb-m bor15 p-t-18 p-b-15 p-lr-40 p-lr-15-sm">
+                                            <div class="flex-w flex-m m-r-20 m-tb-5">
+                                                <input class="stext-104 cl2 plh4 size-117 bor13 p-lr-20 m-r-10 m-tb-5" type="text"
+                                                    name="coupon" placeholder="Coupon Code">
+        
+                                                <div
+                                                    class="flex-c-m stext-101 cl2 size-118 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-5">
+                                                    Apply coupon
+                                                </div>
+                                            </div>
+        
+                                            <div class="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
+                                                Update Cart 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-sm-10 col-lg-7 col-xl-5 m-lr-auto m-b-50" >
+                                    <div class="bor10 p-lr-40 p-t-30 p-b-40 m-l-63 m-r-40 m-lr-0-xl p-lr-15-sm">
+                                        <h4 class="mtext-109 cl2 p-b-30">
+                                            Cart Totals
+                                        </h4>
+        
+                                        <div class="flex-w flex-t p-t-27 p-b-33">
+                                            <div class="size-208">
+                                                <span class="mtext-101 cl2">
+                                                  Total: 
+                                                </span>
+                                        </div>
+                                            <div class="size-209 p-t-1">
+                                                <span class="mtext-110 cl2">
+                                                    <td class="column-6">{{tongtien}}</td>
+                                            
+                                                </span>
+                                            </div>
+                                        </div>
+                             
+                                        <button class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
+                                            <a class="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer" href="/trangchu/thanhtoan">Thanh Toán </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+    <!-- chân trang -->
+    <footer class="footer">
+        <div class="footer-border">
+            <div class="footer-for row no-gutters">
+                <div class="footer-hlep">
+                    <a href=""> <i class="ti-help-alt" style="color: rgb(4, 3, 3); text-decoration: none;"> </i></a>
+                    <span>Hỗ Trợ-Dịch Vụ</span>
+                    <ul>
+                        <li> <a href="#">Hướng dẫn mua hàng </a> </li>
+                        <li> <a href="#">Chính sách mua hàng </a> </li>
+                        <li> <a href="#">Chính sách bảo hành </a> </li>
+                        <li> <a href="#">Gửi phản hồi và ý kiến </a> </li>
+                        <li> <a href="#">Mua hàng từ xa và nhận hàng </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-information">
+                    <a href="" class="b"> <i class="ti-info-alt" style="color: rgb(4, 3, 3);"> </i></a>
+                    <span>Thông Tin Liên Hệ</span>
+                    <ul>
+                        <li>
+                            <a href=""> <i class="ti-location-pin" style="color: rgb(4, 3, 3);"> </i></a>
+                            <span>Cẩm La-Cẩm Ninh-Ân Thi-Hưng Yên</span>
+                        </li>
+                        <li>
+                            <a href=""> <i class="ti-mobile" style="color: rgb(4, 3, 3);"> </i></a>
+                            <span>0968996142</span>
+                        </li>
+                        <li>
+                            <a href=""> <i class="ti-email" style="color: rgb(4, 3, 3);"> </i></a>
+                            <span>Phuchuong20102k1@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-pay">
+                    <a href=""> <i class="ti-shopping-cart-full" style="color: rgb(4, 3, 3);"> </i></a>
+                    <span>Thanh Toán Miễn Phí</span>
+                    <div class="footer-pay-img">
+                        <img src="/public/Content/assets/image/masterCard.jpg" alt="thẻ">
+                    </div>
+
+                </div>
+                <div class="footer-email">
+                    <span>Theo Dõi Chúng Tôi</span>
+                    <p>Nhập email để nhận những thông tin hữu ích</p>
+                    <div class="footer-resgister">
+                        <input class="email" type="text" placeholder="Email của bạn...">
+                        <button class="dangki">Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"
+        integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://rawgit.com/michaelbromley/angularUtils-pagination/master/dirPagination.js"></script>
+    <!-- <script src="/public/js/dirPagination.js"></script>
+    <script src="/public/js/dir.js"></script> -->
+    <script src="/public/js/angular.min.js"></script>
+    <script src="/public/js/giohang.js"></script>
+
+
+</body>
+
+</html>

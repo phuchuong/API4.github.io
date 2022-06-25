@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/Content/assets/css/trangchu.css">
+    <link rel="stylesheet" href="/public/Content/assets/css/thongtinsanpham.css">
+    <link rel="stylesheet" href="/public/Content/assets/font/themify-icons-font/themify-icons/themify-icons.css">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+    <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../giohangcss/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../giohangcss/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../giohangcss/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../giohangcss/fonts/linearicons-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../giohangcss/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../giohangcss/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../giohangcss/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../giohangcss/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../giohangcss/vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../giohangcss/css/util.css">
+    <link rel="stylesheet" type="text/css" href="../giohangcss/css/main.css">
+
+    <style>
+        ol,
+        ul {
+            margin-bottom: 0px;
+        }
+
+        .name-height {
+            height: 37px;
+        }
+
+        #searchString {
+            width: 400px;
+            border-radius: 5px;
+            height: 30px;
+        }
+
+        #searchsubmit {
+            height: 34px;
+            width: 34px;
+            border: 1px solid #FB6445;
+            margin-right: 25px;
+            border-radius: 5px;
+            background-color: #FB6445;
+            color: white;
+        }
+
+        ol,
+        ul,
+        dl {
+            margin-top: 0;
+            margin-bottom: 0rem !important;
+        }
+    </style>
+</head>
+
+<body lang="en" ng-app="myapp" ng-controller="sanphamcontroller">
+
+    <header id="header-trangchu">
+        <div class="header-bia">
+            <nav class="row no-gutters">
+                <div class="header-logo">
+                    <img src="/public/Content/assets/image/n.png" alt="ảnh bìa " class="anh-bia">
+                </div>
+
+                <div class="header-search">
+
+
+                    <input class="form-control" type="text" placeholder="Tìm Kiếm" aria-label="Search for..."
+                        aria-describedby="btnNavbarSearch" ng-init="textSearch=''" ng-model="textSearch"
+                        style="width:350px" />
+                    <button class="fa fa-search" type="submit" id="searchsubmit"></button>
+
+                </div>
+
+
+
+
+                <div class="header-menuitem">
+                    <div class="header-menuitem-list">
+                        <ul>
+                            <li class="ti-shopping-cart"><a href="/TT/GioHang/cart.html" style="text-decoration: none;">Giỏ
+                                    hàng</a></li>
+                            <li class="header-menuitem-login"><a href="/admin/login">Đăng nhập</a></li>
+                            <!-- <div class="navbar__link-separator"> </div> -->
+                            <li class="header-menuitem-login"><a>Đăng ký</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+        <div id="mymenu" class="menu-trangchu">
+            <ul>
+                <li><a href="/TT/trangchu.html" style="color:black"> Trang chủ </a> </li>
+                <li><a href="/TT/TrangCon/iphone.html?idloaisp=1" style="color:black">Iphone</a></li>
+                <li><a href="/TT/TrangCon/iphone.html?idloaisp=2" style="color:black">Samsung</a></li>
+                <li><a href="/TT/TrangCon/iphone.html?idloaisp=3" style="color:black">Nokia</a></li>
+                <li><a href="/TT/TrangCon/iphone.html?idloaisp=4" style="color:black">Xiaomi</a></li>
+                <li><a href="/TT/TrangCon/iphone.html?idloaisp=5" style="color:black">OppO</a></li>
+                <li><a href="/TT/TrangCon/iphone.html?idloaisp=6" style="color:black">Vsmart</a></li>
+                <!-- <li><a class="a" href="#">Realme</a></li> -->
+                <!-- <i class="fa fa-bars"></i> -->
+
+            </ul>
+
+
+        </div>
+        <!-- thanh menu chính -->
+        <script>
+            window.onscroll = function () { myFunction() };
+
+            var navbar = document.getElementById("mymenu");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky")
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+
+        <!-- pc -->
+
+
+
+        <label for="nav-mobi-input" class="ti-menu">
+        </label>
+
+        <input type="checkbox" hidden class="nav-input" name="" id="nav-mobi-input">
+        <label for="nav-mobi-input" class="nav-overplay">
+        </label>
+
+        <label for="nav-mobi-input" class="menu-trangchu-iphone">
+
+
+            <label for="nav-mobi-input" class="ti-close"></label>
+        </label>
+    </header>
+
+
+    <section class=" section-1">
+
+        <div class="slide-show">
+            <div class="slide-show-me"><a href=""><img src="/public/Content/assets/slideimg/slide_01.jpg"
+                        alt="slide-1"></a></div>
+            <div class="slide-show-me"><a href=""><img src="/public/Content/assets/slideimg/slide_02.jpg"
+                        alt="slide-1"></a></div>
+            <div class="slide-show-me"><a href=""><img src="/public/Content/assets/slideimg/slide_03.jpg"
+                        alt="slide-1"></a></div>
+            <div class="slide-show-me"><a href=""><img src="/public/Content/assets/slideimg/slide_04.jpg"
+                        alt="slide-1"></a></div>
+            <div class="slide-show-me"><a href=""><img src="/public/Content/assets/slideimg/slide_06.jpg"
+                        alt="slide-1"></a></div>
+            <button class="button black display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="button black display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slide-show-me");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+
+
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("slide-show-me");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+
+    </section>
+    <!-- giua -->
+    <div>
+        <div ng-controller="sanphamcontroller">
+
+            <section>
+                <div class="content">
+                    <!-- section1 start -->
+                    <div class="section">
+                        <div class="box-head row  ">
+                            <a class="box-tittle " href="#">Điện Thoại Nổi Bật</a>
+                            <div class="menu-iphone">
+                            </div>
+                            <a class="more" href="">Xem tất cả</a>
+                        </div>
+                        <div class="list-content-apple">
+                            <div class="row-item row no-gutters">
+
+
+                                <div class="list-apple-1" dir-paginate="sp in sanpham|filter:textSearch|itemsPerPage:pagesize">
+                                    <div class="list-apple-image-1">
+                                        <img src="/public/Content/assets/image/products/{{sp.hinhAnh2}}" width="200px" alt="" srcset=""
+                                            class="iphone7plus">
+                                        <a href="/TT/chitietsp.html?idsp={{sp.id_SP}}">
+                                            <div class="overlay">
+                                                <ol>
+                                                    <li>
+                                                        Bảo hành: - Bảo hành chính hãng Apple Việt Nam 12 tháng, lỗi 1
+                                                        đổi 1.Bao
+                                                        xài
+                                                        đổi trả trong vòng 15 ngày đầu tiên
+                                                    </li>
+                                                    <li>
+                                                        Khuyến mại: Có hỗ trợ trả góp, Máy mới 100% do Apple Việt Nam
+                                                        phân phối
+                                                        chính hãng, Khuyến mãi mua kèm tai nghe Airpods2 case sạc thường
+                                                        chính
+                                                        hãng
+                                                        VN/A với giá ưu đãi 3.590.000, ...
+                                                    </li>
+                                                    <li>
+                                                        Đã bao gồm 10% VAT | Màu Black 9.590.000 - Màu Silver, Rose
+                                                        Gold, Gold:
+                                                        9.990.000
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="product-name">
+                                        <h4 class="name-height">{{sp.tenSP}}</h4>
+
+                                        <a href="/trangchu/giohang" class="add-cart"
+                                            ng-click="addtocart(s.id,s.name,s.image,s.unit_price,1)">
+                                            <button class="giohang-them"
+                                                onclick="return confirm('Bạn có muốn thêm sản phẩm này vào giỏ hàng')">
+                                                Thêm giỏ hàng </button>
+                                        </a>
+
+                                        <div class="product-price">
+                                            <span class="price">{{sp.giaBan}}</span>
+                                            <sup>đ</sup>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div>
+                                <dir-pagination-controls max-size="50" direction-links="true" boundary-links="true"
+                                    on-page-change="pageChangeHandler(newPageNumber)">
+                                </dir-pagination-controls>
+                            </div>
+                        </div>
+
+                    </div>
+            </section>
+        </div>
+    </div>
+
+
+
+    <!-- chân trang -->
+    <footer class="footer">
+        <div class="footer-border">
+            <div class="footer-for row no-gutters">
+                <div class="footer-hlep">
+                    <a href=""> <i class="ti-help-alt" style="color: rgb(4, 3, 3); text-decoration: none;"> </i></a>
+                    <span>Hỗ Trợ-Dịch Vụ</span>
+                    <ul>
+                        <li> <a href="#">Hướng dẫn mua hàng </a> </li>
+                        <li> <a href="#">Chính sách mua hàng </a> </li>
+                        <li> <a href="#">Chính sách bảo hành </a> </li>
+                        <li> <a href="#">Gửi phản hồi và ý kiến </a> </li>
+                        <li> <a href="#">Mua hàng từ xa và nhận hàng </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-information">
+                    <a href="" class="b"> <i class="ti-info-alt" style="color: rgb(4, 3, 3);"> </i></a>
+                    <span>Thông Tin Liên Hệ</span>
+                    <ul>
+                        <li>
+                            <a href=""> <i class="ti-location-pin" style="color: rgb(4, 3, 3);"> </i></a>
+                            <span>Cẩm La-Cẩm Ninh-Ân Thi-Hưng Yên</span>
+                        </li>
+                        <li>
+                            <a href=""> <i class="ti-mobile" style="color: rgb(4, 3, 3);"> </i></a>
+                            <span>0968996142</span>
+                        </li>
+                        <li>
+                            <a href=""> <i class="ti-email" style="color: rgb(4, 3, 3);"> </i></a>
+                            <span>Phuchuong20102k1@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-pay">
+                    <a href=""> <i class="ti-shopping-cart-full" style="color: rgb(4, 3, 3);"> </i></a>
+                    <span>Thanh Toán Miễn Phí</span>
+                    <div class="footer-pay-img">
+                        <img src="/public/Content/assets/image/masterCard.jpg" alt="thẻ">
+                    </div>
+
+                </div>
+                <div class="footer-email">
+                    <span>Theo Dõi Chúng Tôi</span>
+                    <p>Nhập email để nhận những thông tin hữu ích</p>
+                    <div class="footer-resgister">
+                        <input class="email" type="text" placeholder="Email của bạn...">
+                        <button class="dangki">Đăng kí</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"
+        integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://rawgit.com/michaelbromley/angularUtils-pagination/master/dirPagination.js"></script>
+    <!-- <script src="/public/js/dirPagination.js"></script>
+    <script src="/public/js/dir.js"></script> -->
+    <script src="/public/js/angular.min.js"></script>
+    <script src="/public/js/sanpham.js"></script>
+
+
+</body>
+
+</html>
